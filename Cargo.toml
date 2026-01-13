@@ -1,0 +1,11 @@
+[package]
+name = "uuid-generator"
+version = "0.1.0"
+edition = "2024"
+authors = ["JSpringYC <jspringyc@gmail.com>"]
+description = "Command-line UUID v4 and v7 generator with multiple output formats"
+license = "GPL-3.0-or-later"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+uuid = { version = "1.4", features = ["v4", "v7"] }
